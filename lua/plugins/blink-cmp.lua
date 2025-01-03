@@ -7,10 +7,7 @@ return {
   ---@type blink.cmp.Config
   opts = {
     keymap = {
-      preset = "enter",
-      ["<S-Tab>"] = { "select_prev", "fallback" },
-      ["<Tab>"] = { "select_next", "fallback" },
-      ["<C-Tab>"] = { "cancel", "fallback" },
+      preset = "super-tab",
     },
     signature = {
       enabled = true,
@@ -58,7 +55,6 @@ return {
       },
     },
     appearance = {
-      use_nvim_cmp_as_default = true,
       nerd_font_variant = "mono",
     },
   },
